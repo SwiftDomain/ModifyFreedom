@@ -87,7 +87,7 @@ struct FreedomModelData: Codable, Identifiable{
     func saveFreedomModelData(completion:@escaping (FreedomModelData) -> ()) {
         
         let freedomModelData = FreedomModelData(id: id, step1: step1, step2: step2, step3: step3, step4: step4, step5: step5, step6: step6, step7: step7, workingOn: workingOn, debt: debt, debtBalance: debtBalance, emergencyFund: emergencyFund, efBalance: efBalance, mortgage: mortgage, mortgageBalance: mortgageBalance)
-        
+          
         let jsonEncoder = JSONEncoder()
         jsonEncoder.outputFormatting = .prettyPrinted
         
